@@ -31,24 +31,30 @@ set2.pcap
     - 77982
 11. How many plaintext username-password pairs are there in this packet set? Please count any anonymous or generic accounts.
     - 2 (assuming genericusersync is not an account)
+        - larry@radsot.com:Z3lenzmej
+        - anonymous
 12. Briefly describe how you found the username-password pairs.
     - Sorted by protocol and manually looked through the info to see where logins were requested
     - Searched packets for "anon"
 13. For each of the plaintext username-password pair that you found, identify the protocol used, server IP, the corresponding domain name (e.g., google.com), and port number.
-    - IMAP, 87.120.13.118, email, 143
-    - HTTP, 54.192.235.23, splunk.com, 80
+    - larry: IMAP, 87.120.13.118, email, 143
+    - anon: HTTP, 54.192.235.23, splunk.com, 80
 14. Of all the plaintext username-password pairs that you found, how many of them are legitimate? That is, the username-password was valid, access successfully granted? Please do not count any anonymous or generic accounts.
     - 1
+        - larry@radsot.com:Z3lenzmej
 
 set3.pcap
 
 15. How many plaintext username-password pairs are there in this packet set? Please count any anonymous or generic accounts.
     - 2 (assuming genericusersync is not an account)
+        - seymore:butts
+        - nab01620@nifty.com:takirin1
 16. For each of the plaintext username-password pair that you found, identify the protocol used, server IP, the corresponding domain name (e.g., google.com), and port number.
-    - HTTP, 162.222.171.208, forum.defcon.org, 80
-    - IMAP, 210.131.4.155, email, 143
+    - seymore: HTTP, 162.222.171.208, forum.defcon.org, 80
+    - Nifty: IMAP, 210.131.4.155, email, 143
 17. Of all the plaintext username-password pairs that you found, how many of them are legitimate? That is, the username-password was valid, access successfully granted? Please do not count any anonymous or generic accounts.
     - 1
+        - nab01620@nifty.com:takirin1
 18. Provide a listing of all IP addresses with corresponding hosts (hostname + domain name) that are in this PCAP set. Describe your methodology.
     - 68.142.122.70 - softpedia.com
     - 64.235.154.33 - defcon23-badge-challenge.wikia.com
